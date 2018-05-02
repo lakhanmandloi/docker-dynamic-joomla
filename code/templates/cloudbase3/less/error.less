@@ -1,0 +1,85 @@
+/**
+* @version   $Id: error.less 20543 2014-04-21 16:28:00Z james $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+* @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+*/
+
+.unsupported .showcase-image {
+	width: 250px;
+	height: 315px;
+	float: left;
+	background: url(../images/upgrade.png) 0 0 no-repeat;
+	margin: 15px 15px 15px 0;
+}
+
+.unsupported .showcase-content {
+    padding-top:50px;
+}
+
+.rt-error-content {
+	text-align: center;
+    h1,h2{
+        border: none; 
+        box-shadow: none; 
+        margin: 0; 
+        padding: 0;
+    }
+    h1{
+        font-size: 8.0em; 
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+        line-height: 1em;
+    }
+    h2{
+        font-size: 2.0em; 
+        line-height: 2.0em;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.unsupported .showcase-image  {
+		width: 250px;
+	}
+	
+	.unsupported .showcase-content {
+		margin-left: 255px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.unsupported .showcase-image  {
+		width: 250px;
+	}
+	.unsupported .showcase-content  {
+		margin-left: 255px;
+	}
+	.error-title {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.unsupported .showcase-image  {
+		display:none;
+	}
+	.rt-error-content, .unsupported .showcase-content{
+		margin-left: 0;
+		padding-top:0px;
+	}
+	.error-title {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.unsupported .showcase-image{
+		display:none;
+	}
+	.rt-error-content, .unsupported .showcase-content  {
+		margin-left: 0;
+		padding-top:0px;
+	}
+	.error-title {
+		font-size: 1.6em;
+	}
+}

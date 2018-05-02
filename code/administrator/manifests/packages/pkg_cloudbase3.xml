@@ -1,0 +1,16 @@
+<extension type="package" version="2.5" method="upgrade">
+	<name>Cloudbase3</name>
+	<packagename>cloudbase3</packagename>
+	<version>1.0.8</version>
+	<author>CloudAccess.net</author>
+	<copyright>Copyright (c)2017 CloudAccess.net - All rights reserved</copyright>
+	<creationDate>2017-09-27</creationDate>
+	<license>http://opensource.org/licenses/GPL-3.0 GPL-3.0</license>
+	<packager>Joomla! Extensions Packager library made by VikiJel</packager>
+	<packagerurl>https://github.com/vikijel/joomla-extensions-packager</packagerurl>
+	<files>
+		<file type="template" id="cloudbase3" client="site">cloudbase3.zip</file>
+		<file type="module" id="mod_roknavmenu" client="site">mod_roknavmenu.zip</file>
+		<file type="package" id="pkg_gantry">pkg_gantry.zip</file>
+	</files>
+</extension>

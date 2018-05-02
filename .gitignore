@@ -1,0 +1,11 @@
+configs/
+log.conf/
+code/administrator/cache/*
+code/administrator/log/*
+code/administrator/logs/*
+code/cache/*
+code/images/*
+code/configs/*
+code/log/*
+code/logs/*
+code/tmp/*

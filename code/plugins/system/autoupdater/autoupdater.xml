@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+    <name>Auto-Updater</name>
+    <author>Auto-Updater</author>
+    <creationDate>2018-04-05</creationDate>
+    <copyright></copyright>
+    <license>GNU General Public Licence http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.16.0</version>
+    <description></description>
+    <files>
+        <filename plugin="autoupdater">autoupdater.php</filename>
+        <filename>defines.php</filename>
+        <filename>index.html</filename>
+        <filename>installer.autoupdater.php</filename>
+        <folder>Cms</folder>
+        <folder>fields</folder>
+        <folder>layouts</folder>
+        <folder>lib</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB.plg_system_autoupdater.ini</language>
+        <language tag="en-GB">en-GB.plg_system_autoupdater.sys.ini</language>
+    </languages>
+    <scriptfile>installer.autoupdater.php</scriptfile>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/plugins/system/autoupdater/fields/autoupdater">
+                <field type="autoupdaterpage" hidden="true"/>
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                        name="read_token"
+                        type="text"
+                        default=""
+                        class="input-xxlarge"
+                        label="PLG_AUTOUPDATER_FIELD_READ_TOKEN_LABEL"
+                        description="PLG_AUTOUPDATER_FIELD_READ_TOKEN_DESC"/>
+                <field
+                        name="write_token"
+                        type="text"
+                        default=""
+                        class="input-xxlarge"
+                        label="PLG_AUTOUPDATER_FIELD_WRITE_TOKEN_LABEL"
+                        description="PLG_AUTOUPDATER_FIELD_WRITE_TOKEN_DESC"/>
+                <field
+                        name="aes_key"
+                        type="text"
+                        default=""
+                        class="input-xxlarge"
+                        label="PLG_AUTOUPDATER_FIELD_AES_KEY_LABEL"
+                        description="PLG_AUTOUPDATER_FIELD_AES_KEY_DESC"/>
+                <field
+                        name="ssl_verify"
+                        type="radio"
+                        label="PLG_AUTOUPDATER_FIELD_SSL_VERIFY_LABEL"
+                        description="PLG_AUTOUPDATER_FIELD_SSL_VERIFY_DESC"
+                        default="1"
+                        class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
+                        name="encryption"
+                        type="radio"
+                        label="PLG_AUTOUPDATER_FIELD_ENCRYPTION_LABEL"
+                        description="PLG_AUTOUPDATER_FIELD_ENCRYPTION_DESC"
+                        default="1"
+                        class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="debug"
+                       type="radio"
+                       label="PLG_AUTOUPDATER_FIELD_DEBUG_LABEL"
+                       description="PLG_AUTOUPDATER_FIELD_DEBUG_DESC"
+                       default="0"
+                       class="btn-group btn-group-yesno"
+                >
+                    <option value="0">JNo</option>
+                    <option value="1">JYes</option>
+                </field>
+                <field name="token_expires_at" type="hidden" default=""/>
+                <field name="aes_update_attempts" type="hidden" default="0"/>
+                <field name="ping" type="hidden" default=""/>
+                <field name="backuptool_dir" type="hidden" default=""/>
+                <field name="whitelabel_name" type="hidden" default=""/>
+                <field name="whitelabel_author" type="hidden" default=""/>
+                <field name="whitelabel_child_page" type="hidden" default=""/>
+                <field name="whitelabel_login_page" type="hidden" default=""/>
+                <field name="hide_child" type="hidden" default="0"/>
+                <field name="protect_child" type="hidden" default="0"/>
+                <field name="version" type="hidden" default=""/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
