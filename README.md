@@ -20,6 +20,7 @@
 ## Things Pending - 
 
 1. Images folder nginx url rewrite
+2. Bring project codebase inside the image
 
 
 
